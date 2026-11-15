@@ -1,0 +1,10 @@
+{
+  "main": "cs",
+  "guidance": 2.0,
+  "steps": 50,
+  "eta": 0.0,
+  "checkpoint": "last.pt",
+  "ema": "ema0.999",
+  "chosen_by": "phase E mean rank on dev",
+  "frozen_utc": "2026-10-31T01:45:50.730794+00:00"
+}

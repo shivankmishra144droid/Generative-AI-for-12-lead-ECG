@@ -1,0 +1,112 @@
+{
+  "timestamp_utc": "2026-10-31T02:45:32.475041+00:00",
+  "regression_checks": [
+    {
+      "command": [
+        "<python>\\python.exe",
+        "-m",
+        "pytest",
+        "latent_diffusion",
+        "-q",
+        "-k",
+        "not empirical_gate_a",
+        "-o",
+        "cache_dir=latent_diffusion\\artifacts\\v2\\pytest_cache"
+      ],
+      "exit_code": 0,
+      "stdout": "..............................                                           [100%]\n============================== warnings summary ===============================\ntest_models.py::test_sssd_forward_backward_and_ddim_reproducibility\n  synthetic_generation\\s4.py:60: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead\n    log.warn(\n\ntest_models.py::test_sssd_forward_backward_and_ddim_reproducibility\ntest_models.py::test_sssd_forward_backward_and_ddim_reproducibility\ntest_models.py::test_sssd_checkpoint_loads_on_cpu_without_overlapping_buffers\ntest_models_v2.py::test_null_map_equals_absent_map\ntest_models_v2.py::test_ddim_deterministic_and_eta_changes_output\ntest_models_v2.py::test_loss_backward_finite\n  <python>\\Lib\\site-packages\\torch\\nn\\utils\\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.\n    WeightNorm.apply(module, name, dim)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n30 passed, 1 deselected, 7 warnings in 9.25s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "<python>\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_study2.py",
+        "tests/test_study3.py",
+        "tests/test_study4.py",
+        "tests/test_study4_features.py",
+        "tests/test_selection_and_rhythm.py",
+        "-q",
+        "-o",
+        "cache_dir=latent_diffusion\\artifacts\\v2\\pytest_cache"
+      ],
+      "exit_code": 0,
+      "stdout": "........................................................                 [100%]\n56 passed in 21.68s\n",
+      "stderr": ""
+    }
+  ],
+  "baseline_files_checked": 103,
+  "changed_preexisting_files": [],
+  "v1_changed_files": [
+    "latent_diffusion/conftest.py"
+  ],
+  "prohibited_split_references": [],
+  "syntax_files": 24,
+  "code_sha256": {
+    "latent_diffusion/ae_ladder_v2.py": "81766588c6337fd6c4a25faa306eacdd604a8482fee42b6c88ce172ffe638bc4",
+    "latent_diffusion/baselines_v2.py": "fe2941ae0c3c5a1c8f9ca7f54417fc2d14401f0612fc631c1e2e3563772dd857",
+    "latent_diffusion/dev_eval_v2.py": "63070aa0f4d35abc7519e76db5a1e6f5811401533b24f3b337de7ad9d94b385f",
+    "latent_diffusion/diagnostics_v2.py": "e93330461c556b0cd8c8dd8cc19cf11bd6c15f184824f78bc34beafa5cc0b2fb",
+    "latent_diffusion/encoder_v2.py": "5abe889dbb2c96f591d4ac0cfef7deb273dbc654edb0c9dd58ef788cc2cdfba9",
+    "latent_diffusion/figures_v2.py": "1ee7c55e0a1d694de487b25443b455f8fdfc8449bd9a32710a425e179e2fec07",
+    "latent_diffusion/finalize_phase_a_v2.py": "2af0fbf47631b7c3e1735bf30a0c17791ca4934f814fed9e380cf7199dfde803",
+    "latent_diffusion/final_audit_v2.py": "458cc3fda925fac1a297306f15b0f90b7b5a817c0e28e355249b82df9c14f63c",
+    "latent_diffusion/finish_v2.py": "200ed39b5d6e19413f9b7303d8b4df5a2e295c722f58dd4936f58462a766e33e",
+    "latent_diffusion/gate_a_amended_v2.py": "5f7e2d8dc7cea09c41dfcdb66ba4659eb71c14f0611fc688fbaba5084590e673",
+    "latent_diffusion/gen_eval_v2.py": "72933da2f945530008bb7e45379cfd823058b02b01d95ac65d502487c2baa7a1",
+    "latent_diffusion/phase_a_v2.py": "7d5b360502daaf9d93db827aeeae9357c8e43cda23bebd5c342e5c7f097d6d98",
+    "latent_diffusion/phase_b_v2.py": "0ee3931c2bdb9495b59f004a41451df1ba5e66c77408531370cf46a9d8a61935",
+    "latent_diffusion/phase_f_v2.py": "4bac0b11c3b73f236d6b56e207dcdfdc78603a3ae0a0af2db41b060474ac71e6",
+    "latent_diffusion/phase_g_v2.py": "683eac45d4bb5036ec69383786a97ce9641452e1e45c82d7dce48d676241695d",
+    "latent_diffusion/report_v2.py": "6885e952f41ca31c1bb947ad50068ec787b1a50de97e7ff86282acdc0c0dfa06",
+    "latent_diffusion/rhythm_v2.py": "ff6980501fcbcd2b0dd0b33cceb27b6c66e6527f3a96fbf1411e2c525e84d410",
+    "latent_diffusion/sample_v2.py": "5f37598641a93a98720d0d83549397b4979b857d3ac551406abfe56f608f4f5c",
+    "latent_diffusion/test_metrics_v2.py": "7420c052c6d2c61e740160d6563478ab77f432d49927fa8c38c196bca71269b7",
+    "latent_diffusion/test_models_v2.py": "9e7f207beeb714d0abc91db466e87ee13662dd33d2b145f9f2f1b11eb9ab1742",
+    "latent_diffusion/test_runtime_v2.py": "ffe6d1655fc70108c1ca8ad1c3c41d70d1e61bcc9b83e9696bfd80621061f905",
+    "latent_diffusion/thresholds_v2.py": "9b97db53d0097961c64d5886a2a76ad56555b786a75921365b59862408004435",
+    "latent_diffusion/train_diffusion_v2.py": "255ee990c268fbec2eddc9afe2c0b48d406fe8b03ff8e2c8c8a8997913de768b",
+    "latent_diffusion/v2_common.py": "4984cbad0e8c3f457d1efabe9caa0937888167d4fcd702df4b2c106deff27bca"
+  },
+  "v1_spotchecks": [
+    {
+      "generator": "hybrid",
+      "rhythm": "SR",
+      "stored_csv_matches_stored_json": true,
+      "note": "Historical V1 benchmark not rerun because it loads validation; hashes preserve reproducibility"
+    },
+    {
+      "generator": "latent_diffusion",
+      "rhythm": "SR",
+      "stored_csv_matches_stored_json": true,
+      "note": "Historical V1 benchmark not rerun because it loads validation; hashes preserve reproducibility"
+    }
+  ],
+  "software_checks_pass": false,
+  "experimental_gate_a_pass": false,
+  "experimental_gate_a_failures": [
+    "noise/SR/emb_task/precision",
+    "noise/SR/emb_ssl/precision",
+    "noise/AFIB/emb_task/precision",
+    "noise/AFIB/emb_ssl/precision",
+    "noise/STACH/emb_ssl/precision",
+    "collapse/SBRAD/emb_task/coverage",
+    "noise/SBRAD/emb_ssl/precision",
+    "collapse/SBRAD/emb_ssl/coverage"
+  ],
+  "distinction": "Software regression success does not override a failed empirical acceptance gate",
+  "environment": {
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "numpy": "2.5.2",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.0",
+      "matplotlib": "3.10.9",
+      "neurokit2": "0.2.13",
+      "pytest": "9.1.1"
+    }
+  }
+}

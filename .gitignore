@@ -1,0 +1,68 @@
+# Raw PhysioNet PTB-XL (multi-GB). Download from PhysioNet; do not commit.
+archive/
+
+# Waveform arrays exceed GitHub's 100 MB file limit. Labels, metadata, and
+# train-only normalization stats are committed. Rebuild X_*.npy from notebook 02
+# after placing PTB-XL under archive/.
+processed_data/X_*.npy
+
+# Bulky generator checkpoints (20–91 MB each, many snapshots). Retrain with
+# synthetic_generation/ and the Week 4–5 notebooks. Frozen CNN-LSTM weights
+# and the selected Week-4 SSSD checkpoint are tracked via the exceptions below.
+*.pt
+!baseline/cnn_lstm_baseline.pt
+!generator_comparison/sssd/checkpoint.pt
+# Submitted checkpoints (all under GitHub's 100 MB limit)
+!generator_comparison/template_gen/checkpoints/tpl_8x64_last.pt
+!latent_diffusion/artifacts/v2/ae_r1/best.pt
+!latent_diffusion/artifacts/v2/diffusion_cs/last.pt
+!latent_diffusion/artifacts/v2/diffusion_ds/last.pt
+!latent_diffusion/artifacts/v2/diffusion_cm/step100000.pt
+
+# Secrets
+.env
+.env.*
+*.pem
+credentials.json
+
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Local research notes (not part of the code pipeline)
+OBSIDIAN/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+
+# Large regenerable beat-assembly intermediates (rebuild with _beat_oracle.py / _beat_ablation.py).
+# Small result files (roundtrip.json, figures) stay tracked.
+generator_comparison/beat_templates/ablation/
+generator_comparison/beat_templates/*.npz
+generator_comparison/beat_templates/*.pkl
+!generator_comparison/beat_templates/assembly_models.pkl
+# Large TSTR pools (rebuild with _gen_tstr_pools.py)
+generator_comparison/tstr/pool_*.npz
+# Final synthetic pool (rebuild with _beat_gen_pool.py, see generator_comparison/final_pool/README.md)
+generator_comparison/final_pool/*.npz
+# Study 2 pools (rebuild with _beat_gen_pool.py, see report/WORKFLOW_2.md); score files stay tracked
+generator_comparison/pools2/pool_*.npz
+# Study 3 (report/WORKFLOW_3.md): pools and subset-fitted assembly models are rebuilt by _study3_build.py;
+# subset index files, meta.json, checks and gate results stay tracked
+generator_comparison/study3/pools/*.npz
+generator_comparison/study3/**/*.pkl
+# Study 4 (report/WORKFLOW_4.md): semi-synthetic variants and pools are rebuilt by _study4_*.py; split, JSON results stay tracked
+generator_comparison/study4/**/*.npz
+!generator_comparison/study4/split.npz
+generator_comparison/study4/**/*.pkl
+
+# external downloads (study 4 question W)
+external/
+
+# Overleaf upload bundle (rebuilt from report/)
+report/overleaf_report.zip

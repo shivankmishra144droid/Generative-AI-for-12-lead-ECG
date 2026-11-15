@@ -1,0 +1,647 @@
+{
+  "original_gate_preserved": true,
+  "noise_geometry": {
+    "SR": {
+      "emb_task": {
+        "real_balls_covering_any_noise": 2,
+        "real_ball_count": 256,
+        "noise_covered_fraction": 0.984375,
+        "noise_mean_distance_to_centroid": 1.2125718593597412,
+        "real_mean_distance_to_centroid": 5.688863754272461,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      },
+      "emb_ssl": {
+        "real_balls_covering_any_noise": 9,
+        "real_ball_count": 256,
+        "noise_covered_fraction": 1.0,
+        "noise_mean_distance_to_centroid": 1.720775842666626,
+        "real_mean_distance_to_centroid": 10.798527717590332,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      }
+    },
+    "AFIB": {
+      "emb_task": {
+        "real_balls_covering_any_noise": 9,
+        "real_ball_count": 170,
+        "noise_covered_fraction": 1.0,
+        "noise_mean_distance_to_centroid": 1.121402621269226,
+        "real_mean_distance_to_centroid": 5.539106369018555,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      },
+      "emb_ssl": {
+        "real_balls_covering_any_noise": 9,
+        "real_ball_count": 170,
+        "noise_covered_fraction": 0.9411764705882353,
+        "noise_mean_distance_to_centroid": 1.7662698030471802,
+        "real_mean_distance_to_centroid": 10.537254333496094,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      }
+    },
+    "STACH": {
+      "emb_task": {
+        "real_balls_covering_any_noise": 0,
+        "real_ball_count": 82,
+        "noise_covered_fraction": 0.0,
+        "noise_mean_distance_to_centroid": 1.0746002197265625,
+        "real_mean_distance_to_centroid": 5.119477272033691,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      },
+      "emb_ssl": {
+        "real_balls_covering_any_noise": 24,
+        "real_ball_count": 82,
+        "noise_covered_fraction": 1.0,
+        "noise_mean_distance_to_centroid": 1.729566216468811,
+        "real_mean_distance_to_centroid": 10.421639442443848,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      }
+    },
+    "SBRAD": {
+      "emb_task": {
+        "real_balls_covering_any_noise": 0,
+        "real_ball_count": 63,
+        "noise_covered_fraction": 0.0,
+        "noise_mean_distance_to_centroid": 1.2605187892913818,
+        "real_mean_distance_to_centroid": 5.851361274719238,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      },
+      "emb_ssl": {
+        "real_balls_covering_any_noise": 3,
+        "real_ball_count": 63,
+        "noise_covered_fraction": 0.6984126984126984,
+        "noise_mean_distance_to_centroid": 1.8290979862213135,
+        "real_mean_distance_to_centroid": 9.940787315368652,
+        "interpretation": "A tight noise cluster can fall inside a few large real k-neighbor balls: high precision does not imply realistic waveforms"
+      }
+    }
+  },
+  "ae_fallback": {
+    "SR": {
+      "noise": {
+        "precision": {
+          "value": 0.13671875,
+          "ci95": [
+            0.0,
+            0.1796875
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.03046875,
+          "ci95": [
+            0.0,
+            0.06681640624999997
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.0078125,
+          "ci95": [
+            0.0,
+            0.023303320966428377
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "collapse": {
+        "precision": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 1.8,
+          "ci95": [
+            0.8,
+            3.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.03515625,
+          "ci95": [
+            0.015625,
+            0.05941205533596837
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "floor": {
+        "precision": {
+          "value": 0.95703125,
+          "ci95": [
+            0.8280593749999999,
+            0.9373939152547566
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.89453125,
+          "ci95": [
+            0.7441860465116279,
+            0.8737792163331362
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 1.1203125,
+          "ci95": [
+            0.8338519079345851,
+            1.1898964758725714
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.96875,
+          "ci95": [
+            0.7523773910224292,
+            0.9169960474308301
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      }
+    },
+    "AFIB": {
+      "noise": {
+        "precision": {
+          "value": 0.0058823529411764705,
+          "ci95": [
+            0.0,
+            0.023529411764705882
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.001176470588235294,
+          "ci95": [
+            0.0,
+            0.007058823529411765
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.0058823529411764705,
+          "ci95": [
+            0.0,
+            0.017913280581693752
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "collapse": {
+        "precision": {
+          "value": 1.0,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.8,
+          "ci95": [
+            0.0,
+            1.4
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.023529411764705882,
+          "ci95": [
+            0.0,
+            0.04082262341901264
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "floor": {
+        "precision": {
+          "value": 0.9367088607594937,
+          "ci95": [
+            0.7403926282051283,
+            0.9555417956656346
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.9620253164556962,
+          "ci95": [
+            0.7658128908128908,
+            0.9867587719298245
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.9822784810126584,
+          "ci95": [
+            0.5945162162162162,
+            1.1749041811846688
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.9367088607594937,
+          "ci95": [
+            0.6295100732600732,
+            0.9484177215189873
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      }
+    },
+    "STACH": {
+      "noise": {
+        "precision": {
+          "value": 0.32926829268292684,
+          "ci95": [
+            0.0,
+            0.524390243902439
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.07317073170731707,
+          "ci95": [
+            0.0,
+            0.18536585365853658
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.04878048780487805,
+          "ci95": [
+            0.0,
+            0.08591915085817523
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "collapse": {
+        "precision": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 1.2,
+          "ci95": [
+            0.2,
+            1.8
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.07317073170731707,
+          "ci95": [
+            0.012345679012345678,
+            0.11184027777777775
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "floor": {
+        "precision": {
+          "value": 0.8157894736842105,
+          "ci95": [
+            0.5874452782989368,
+            0.9210526315789473
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.9736842105263158,
+          "ci95": [
+            0.8289583333333334,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.7947368421052632,
+          "ci95": [
+            0.42292763157894736,
+            1.0571756756756756
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 1.0,
+          "ci95": [
+            0.6218750000000001,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      }
+    },
+    "SBRAD": {
+      "noise": {
+        "precision": {
+          "value": 0.2857142857142857,
+          "ci95": [
+            0.0,
+            0.7468253968253961
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.05714285714285714,
+          "ci95": [
+            0.0,
+            0.2761904761904762
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.015873015873015872,
+          "ci95": [
+            0.0,
+            0.06349206349206349
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "collapse": {
+        "precision": {
+          "value": 1.0,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.2,
+          "ci95": [
+            0.0,
+            0.6
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.015873015873015872,
+          "ci95": [
+            0.0,
+            0.046875
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      },
+      "floor": {
+        "precision": {
+          "value": 0.8275862068965517,
+          "ci95": [
+            0.5517241379310345,
+            0.949137931034482
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "recall": {
+          "value": 1.0,
+          "ci95": [
+            0.7714901477832512,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "density": {
+          "value": 0.7931034482758621,
+          "ci95": [
+            0.4413793103448276,
+            1.1175862068965514
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "coverage": {
+          "value": 0.9310344827586207,
+          "ci95": [
+            0.5714285714285714,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      }
+    }
+  },
+  "prdc_bootstrap_diagnostic": {
+    "point_outside_own_interval": [
+      {
+        "rhythm": "SR",
+        "embedding": "emb_task",
+        "metric": "recall",
+        "value": 0.95703125,
+        "ci95": [
+          0.8179855983087922,
+          0.9396912139219016
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      {
+        "rhythm": "SR",
+        "embedding": "emb_task",
+        "metric": "coverage",
+        "value": 0.953125,
+        "ci95": [
+          0.7284786259541984,
+          0.89453125
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      {
+        "rhythm": "SR",
+        "embedding": "emb_ssl",
+        "metric": "precision",
+        "value": 0.98828125,
+        "ci95": [
+          0.8804457442517144,
+          0.980432368259804
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      {
+        "rhythm": "SR",
+        "embedding": "emb_ssl",
+        "metric": "recall",
+        "value": 0.96484375,
+        "ci95": [
+          0.8651117463617464,
+          0.9607843137254902
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      {
+        "rhythm": "SR",
+        "embedding": "emb_ssl",
+        "metric": "coverage",
+        "value": 0.96875,
+        "ci95": [
+          0.710763958375025,
+          0.8871803921568627
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      {
+        "rhythm": "AFIB",
+        "embedding": "emb_task",
+        "metric": "coverage",
+        "value": 1.0,
+        "ci95": [
+          0.7289335664335664,
+          0.9867587719298245
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      {
+        "rhythm": "AFIB",
+        "embedding": "emb_ssl",
+        "metric": "coverage",
+        "value": 0.9493670886075949,
+        "ci95": [
+          0.5937060478199718,
+          0.9300909624413145
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      {
+        "rhythm": "STACH",
+        "embedding": "emb_ssl",
+        "metric": "coverage",
+        "value": 0.9736842105263158,
+        "ci95": [
+          0.5487500000000001,
+          0.9722222222222222
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      }
+    ],
+    "count": 8,
+    "total": 32,
+    "explanation": "Ordinary resampling duplicates points and changes k-neighbor radii. Percentile intervals are reported as requested but do not establish calibrated coverage for this statistic.",
+    "action": "Do not use these PRDC intervals for a superiority claim before a separately validated uncertainty protocol"
+  }
+}

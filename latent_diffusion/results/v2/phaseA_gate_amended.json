@@ -1,0 +1,246 @@
+{
+  "amended_utc": "2026-10-30T20:33:26.995260+00:00",
+  "amendment": "audits/v2/amendment1.md",
+  "original_passed": false,
+  "original_failures": [
+    "noise/SR/emb_task/precision",
+    "noise/SR/emb_ssl/precision",
+    "noise/AFIB/emb_task/precision",
+    "noise/AFIB/emb_ssl/precision",
+    "noise/STACH/emb_ssl/precision",
+    "collapse/SBRAD/emb_task/coverage",
+    "noise/SBRAD/emb_ssl/precision",
+    "collapse/SBRAD/emb_ssl/coverage"
+  ],
+  "passed": true,
+  "checks": {
+    "floor/judge": {
+      "value": 0.44311535140185015,
+      "sd": 0.015242071593883943,
+      "rule": "0.40-0.60, SD<=0.06",
+      "passed": true
+    },
+    "noise/judge": {
+      "value": 1.0,
+      "rule": ">0.95",
+      "passed": true
+    },
+    "floor/SR/emb_task/recall": {
+      "value": 0.95703125,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SR/emb_task/coverage": {
+      "value": 0.953125,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/AFIB/emb_task/recall": {
+      "value": 0.9240506329113924,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/AFIB/emb_task/coverage": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/STACH/emb_task/recall": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/STACH/emb_task/coverage": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SBRAD/emb_task/recall": {
+      "value": 0.9655172413793104,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SBRAD/emb_task/coverage": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "noise/SR/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "noise/SR/emb_task/coverage": {
+      "value": 0.0078125,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "collapse/SR/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "collapse/SR/emb_task/coverage": {
+      "value": 0.01953125,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "copy/SR/distance": {
+      "value": 8.698809868544479e-08,
+      "rule": "<1e-5",
+      "passed": true
+    },
+    "copy/SR/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "noise/AFIB/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "noise/AFIB/emb_task/coverage": {
+      "value": 0.052941176470588235,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "collapse/AFIB/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "collapse/AFIB/emb_task/coverage": {
+      "value": 0.03529411764705882,
+      "rule": "<0.100",
+      "passed": true
+    },
+    "copy/AFIB/distance": {
+      "value": 7.92940865655924e-08,
+      "rule": "<1e-5",
+      "passed": true
+    },
+    "copy/AFIB/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "noise/STACH/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.146",
+      "passed": true
+    },
+    "noise/STACH/emb_task/coverage": {
+      "value": 0.0,
+      "rule": "<0.146",
+      "passed": true
+    },
+    "collapse/STACH/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.146",
+      "passed": true
+    },
+    "collapse/STACH/emb_task/coverage": {
+      "value": 0.06097560975609756,
+      "rule": "<0.146",
+      "passed": true
+    },
+    "copy/STACH/distance": {
+      "value": 9.589958328149764e-08,
+      "rule": "<1e-5",
+      "passed": true
+    },
+    "copy/STACH/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "noise/SBRAD/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.190",
+      "passed": true
+    },
+    "noise/SBRAD/emb_task/coverage": {
+      "value": 0.0,
+      "rule": "<0.190",
+      "passed": true
+    },
+    "collapse/SBRAD/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.190",
+      "passed": true
+    },
+    "collapse/SBRAD/emb_task/coverage": {
+      "value": 0.12698412698412698,
+      "rule": "<0.190",
+      "passed": true
+    },
+    "copy/SBRAD/distance": {
+      "value": 8.036761249112953e-08,
+      "rule": "<1e-5",
+      "passed": true
+    },
+    "copy/SBRAD/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "bootstrap/sanity": {
+      "passed": true,
+      "point_inclusion": true,
+      "width_shrinks": true,
+      "results": {
+        "512": {
+          "value": 0.053882874545587586,
+          "ci95": [
+            -0.038185272547747985,
+            0.14353088178498719
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "1024": {
+          "value": 0.020226963315338006,
+          "ci95": [
+            -0.04169661986105462,
+            0.08523163214727777
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      }
+    }
+  },
+  "failures": [],
+  "demoted_to_descriptive": {
+    "embedding_precision_density_under_noise": {
+      "noise/SR/emb_task/precision": 0.984375,
+      "noise/SR/emb_task/density": 0.38046875,
+      "noise/SR/emb_ssl/precision": 1.0,
+      "noise/SR/emb_ssl/density": 0.7234375,
+      "noise/AFIB/emb_task/precision": 1.0,
+      "noise/AFIB/emb_task/density": 1.0776470588235294,
+      "noise/AFIB/emb_ssl/precision": 0.9411764705882353,
+      "noise/AFIB/emb_ssl/density": 0.49058823529411766,
+      "noise/STACH/emb_task/precision": 0.0,
+      "noise/STACH/emb_task/density": 0.0,
+      "noise/STACH/emb_ssl/precision": 1.0,
+      "noise/STACH/emb_ssl/density": 2.6195121951219513,
+      "noise/SBRAD/emb_task/precision": 0.0,
+      "noise/SBRAD/emb_task/density": 0.0,
+      "noise/SBRAD/emb_ssl/precision": 0.6984126984126984,
+      "noise/SBRAD/emb_ssl/density": 0.15873015873015872
+    },
+    "emb_ssl_noise_coverage": {
+      "SR": 0.03515625,
+      "AFIB": 0.052941176470588235,
+      "STACH": 0.2926829268292683,
+      "SBRAD": 0.047619047619047616
+    },
+    "reason": "embedding precision/density accept Gaussian noise in both embeddings; emb_ssl (trained with noise augmentation) also covers real STACH with noise"
+  },
+  "gate_metric_map": {
+    "Gate C/E coverage": "emb_task coverage (emb_ssl coverage failed its noise control)",
+    "fidelity": "clinical feature judges and feature Wasserstein only"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "level": 25,
+  "draw": 2,
+  "seeds": [
+    305,
+    306,
+    307,
+    308,
+    309
+  ],
+  "steps": 6250,
+  "eval_every": 250,
+  "deterministic": true,
+  "val_only": false,
+  "target": {
+    "1": 2112,
+    "2": 1136,
+    "3": 892
+  },
+  "real_counts": [
+    11741,
+    264,
+    142,
+    112
+  ],
+  "pool": "pool_L25_d2.npz",
+  "pool_sha256": "74e8208651d0bcd0967fe4f9beff1c8d2cbab73bce2f8300c05e4e46fb9ecb46",
+  "subset_sha256": "12f41b02d56f921765ec416c7d6b16bd822d157481a61aeaf869b9e885c9a772",
+  "device": "cuda"
+}

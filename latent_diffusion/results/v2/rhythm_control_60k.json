@@ -1,0 +1,423 @@
+{
+  "created": "2026-10-31T01:39:12.945034+00:00",
+  "hrs": [
+    40,
+    50,
+    60,
+    70,
+    90,
+    110,
+    130,
+    150
+  ],
+  "models": {
+    "cs": {
+      "SR": {
+        "slope": 0.5315885972192883,
+        "intercept": 28.06832342334047,
+        "r2": 0.647519328444472,
+        "valid": 0.99609375,
+        "median_by_hr": {
+          "40": 51.66051660516605,
+          "50": 53.87449691060597,
+          "60": 57.77015543401007,
+          "70": 68.55362705829995,
+          "90": 87.9408699306081,
+          "110": 94.67297076844281,
+          "130": 96.4113827743619,
+          "150": 100.94637223974763
+        },
+        "adherence": []
+      },
+      "AFIB": {
+        "slope": 0.882903709580928,
+        "intercept": 5.627108883401921,
+        "r2": 0.8269928537799603,
+        "valid": 1.0,
+        "median_by_hr": {
+          "40": 52.03253561079475,
+          "50": 51.75323980861066,
+          "60": 54.84529409000976,
+          "70": 64.17936252873096,
+          "90": 85.30459009692237,
+          "110": 103.10931513422962,
+          "130": 128.48687446048237,
+          "150": 148.06883999157287
+        },
+        "adherence": []
+      },
+      "STACH": {
+        "slope": 0.6434723200691088,
+        "intercept": 26.97344857019547,
+        "r2": 0.5635328460664081,
+        "valid": 0.984375,
+        "median_by_hr": {
+          "40": 53.21507760532151,
+          "50": 53.98457583547558,
+          "60": 58.189655172413794,
+          "70": 62.93706293706294,
+          "90": 82.82118268550727,
+          "110": 106.69502763881778,
+          "130": 126.05042016806722,
+          "150": 118.77757279217133
+        },
+        "adherence": []
+      },
+      "SBRAD": {
+        "slope": 0.15027114378270665,
+        "intercept": 46.987806507084606,
+        "r2": 0.07461803555694224,
+        "valid": 1.0,
+        "median_by_hr": {
+          "40": 39.77416497975709,
+          "50": 47.9733537902746,
+          "60": 57.2945748302383,
+          "70": 71.2826111297727,
+          "90": 75.82990957734731,
+          "110": 73.59950124279139,
+          "130": 59.54569327731092,
+          "150": 50.270758122743686
+        },
+        "adherence": []
+      }
+    },
+    "ds": {
+      "SR": {
+        "slope": 0.8677431894902691,
+        "intercept": 7.1597660539365355,
+        "r2": 0.9076879167470638,
+        "valid": 1.0,
+        "median_by_hr": {
+          "40": 40.0,
+          "50": 50.0,
+          "60": 60.0,
+          "70": 69.98939554612937,
+          "90": 90.03215434083602,
+          "110": 109.97963340122199,
+          "130": 124.28956701402521,
+          "150": 140.3267634854772
+        },
+        "adherence": [
+          {
+            "hr": 40,
+            "requested_beats": 211,
+            "missed_fraction": 0.04739336492890995,
+            "extra_per_beat": 0.004739336492890996,
+            "ecg_any_error_fraction": 0.25,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 50,
+            "requested_beats": 263,
+            "missed_fraction": 0.019011406844106463,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.15625,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 60,
+            "requested_beats": 320,
+            "missed_fraction": 0.040625,
+            "extra_per_beat": 0.003125,
+            "ecg_any_error_fraction": 0.25,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 70,
+            "requested_beats": 369,
+            "missed_fraction": 0.032520325203252036,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.25,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 90,
+            "requested_beats": 479,
+            "missed_fraction": 0.012526096033402923,
+            "extra_per_beat": 0.0020876826722338203,
+            "ecg_any_error_fraction": 0.1875,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 110,
+            "requested_beats": 588,
+            "missed_fraction": 0.01870748299319728,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.28125,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 130,
+            "requested_beats": 692,
+            "missed_fraction": 0.05491329479768786,
+            "extra_per_beat": 0.004335260115606936,
+            "ecg_any_error_fraction": 0.59375,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 150,
+            "requested_beats": 799,
+            "missed_fraction": 0.14643304130162704,
+            "extra_per_beat": 0.0012515644555694619,
+            "ecg_any_error_fraction": 0.6875,
+            "tolerance_ms": 50
+          }
+        ]
+      },
+      "AFIB": {
+        "slope": 0.9304873357587836,
+        "intercept": 2.102668417025135,
+        "r2": 0.9224968829579695,
+        "valid": 1.0,
+        "median_by_hr": {
+          "40": 37.79536932325457,
+          "50": 47.78262595406022,
+          "60": 56.704253656358155,
+          "70": 66.92795819335574,
+          "90": 89.07831406594396,
+          "110": 109.73644918226327,
+          "130": 127.02269189036184,
+          "150": 138.8087824210042
+        },
+        "adherence": [
+          {
+            "hr": 40,
+            "requested_beats": 219,
+            "missed_fraction": 0.1050228310502283,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.46875,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 50,
+            "requested_beats": 274,
+            "missed_fraction": 0.058394160583941604,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.4375,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 60,
+            "requested_beats": 331,
+            "missed_fraction": 0.08761329305135952,
+            "extra_per_beat": 0.006042296072507553,
+            "ecg_any_error_fraction": 0.46875,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 70,
+            "requested_beats": 385,
+            "missed_fraction": 0.08311688311688312,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.46875,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 90,
+            "requested_beats": 493,
+            "missed_fraction": 0.04462474645030426,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.34375,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 110,
+            "requested_beats": 597,
+            "missed_fraction": 0.07705192629815745,
+            "extra_per_beat": 0.0016750418760469012,
+            "ecg_any_error_fraction": 0.5625,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 130,
+            "requested_beats": 698,
+            "missed_fraction": 0.06017191977077364,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.59375,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 150,
+            "requested_beats": 811,
+            "missed_fraction": 0.10480887792848335,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.96875,
+            "tolerance_ms": 50
+          }
+        ]
+      },
+      "STACH": {
+        "slope": 0.8733077487394822,
+        "intercept": 7.405186875465247,
+        "r2": 0.8944440415122668,
+        "valid": 1.0,
+        "median_by_hr": {
+          "40": 40.04449388209121,
+          "50": 50.026068821689265,
+          "60": 60.0,
+          "70": 69.98939554612937,
+          "90": 89.95057904759082,
+          "110": 109.85463605656807,
+          "130": 126.60387154194171,
+          "150": 149.68814968814968
+        },
+        "adherence": [
+          {
+            "hr": 40,
+            "requested_beats": 214,
+            "missed_fraction": 0.11682242990654206,
+            "extra_per_beat": 0.1588785046728972,
+            "ecg_any_error_fraction": 0.6875,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 50,
+            "requested_beats": 267,
+            "missed_fraction": 0.09363295880149813,
+            "extra_per_beat": 0.09363295880149813,
+            "ecg_any_error_fraction": 0.53125,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 60,
+            "requested_beats": 320,
+            "missed_fraction": 0.04375,
+            "extra_per_beat": 0.003125,
+            "ecg_any_error_fraction": 0.28125,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 70,
+            "requested_beats": 373,
+            "missed_fraction": 0.06166219839142091,
+            "extra_per_beat": 0.00804289544235925,
+            "ecg_any_error_fraction": 0.53125,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 90,
+            "requested_beats": 480,
+            "missed_fraction": 0.041666666666666664,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.28125,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 110,
+            "requested_beats": 589,
+            "missed_fraction": 0.05432937181663837,
+            "extra_per_beat": 0.001697792869269949,
+            "ecg_any_error_fraction": 0.40625,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 130,
+            "requested_beats": 692,
+            "missed_fraction": 0.06647398843930635,
+            "extra_per_beat": 0.002890173410404624,
+            "ecg_any_error_fraction": 0.59375,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 150,
+            "requested_beats": 800,
+            "missed_fraction": 0.09875,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.5,
+            "tolerance_ms": 50
+          }
+        ]
+      },
+      "SBRAD": {
+        "slope": 0.9745682062327057,
+        "intercept": 0.9413577461672968,
+        "r2": 0.9894102431789574,
+        "valid": 1.0,
+        "median_by_hr": {
+          "40": 40.0,
+          "50": 50.0,
+          "60": 60.0,
+          "70": 69.98939554612937,
+          "90": 90.03215434083602,
+          "110": 109.91379310344828,
+          "130": 129.88351854331233,
+          "150": 150.0
+        },
+        "adherence": [
+          {
+            "hr": 40,
+            "requested_beats": 212,
+            "missed_fraction": 0.02830188679245283,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.125,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 50,
+            "requested_beats": 268,
+            "missed_fraction": 0.018656716417910446,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.15625,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 60,
+            "requested_beats": 320,
+            "missed_fraction": 0.015625,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.15625,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 70,
+            "requested_beats": 369,
+            "missed_fraction": 0.008130081300813009,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.0625,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 90,
+            "requested_beats": 480,
+            "missed_fraction": 0.01875,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.25,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 110,
+            "requested_beats": 587,
+            "missed_fraction": 0.013628620102214651,
+            "extra_per_beat": 0.0,
+            "ecg_any_error_fraction": 0.15625,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 130,
+            "requested_beats": 695,
+            "missed_fraction": 0.03884892086330935,
+            "extra_per_beat": 0.0014388489208633094,
+            "ecg_any_error_fraction": 0.5,
+            "tolerance_ms": 50
+          },
+          {
+            "hr": 150,
+            "requested_beats": 800,
+            "missed_fraction": 0.01625,
+            "extra_per_beat": 0.00125,
+            "ecg_any_error_fraction": 0.28125,
+            "tolerance_ms": 50
+          }
+        ]
+      }
+    }
+  },
+  "gate_D": {
+    "missed_ok": true,
+    "extra_ok": true,
+    "sweep_ok": false,
+    "rhythm_judge_ok": true,
+    "full_judge_ok": true,
+    "passed": false
+  }
+}

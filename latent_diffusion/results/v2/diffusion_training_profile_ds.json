@@ -1,0 +1,40 @@
+{
+  "protocol": {
+    "name": "profile_ds",
+    "layers": 8,
+    "width": 64,
+    "state": 32,
+    "steps": 1000,
+    "batch": 32,
+    "rhythm": true,
+    "lr": "AdamW 2e-4, 1000-step linear warmup, constant",
+    "ema": [
+      0.999,
+      0.995
+    ],
+    "sampling": "class uniform x inverse HR-bin density, clip [0.2,5]",
+    "dropout": "vector .1, map .1, both .05 (independent)",
+    "seed": 9200
+  },
+  "history": [
+    {
+      "step": 1000,
+      "train_loss": 0.9752872586250305,
+      "dev_loss_bins": [
+        0.9909071326255798,
+        0.9671542644500732,
+        0.9677680134773254,
+        0.995312511920929,
+        1.0644124746322632
+      ],
+      "dev_loss": 0.9971108794212341
+    }
+  ],
+  "elapsed_seconds": 126.7569921999966,
+  "peak_reserved_mib": 558.0,
+  "latent_shape": [
+    13811,
+    16,
+    125
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "rung": "r1",
+  "path": "latent_diffusion\\artifacts\\v2\\ae_r1\\best.pt",
+  "sha256": "0cf75ef3f02ee01fa0b665207e1a46af6ccfef7db4e202d13accb52ef3b55693",
+  "passed": true,
+  "rule": "first passing rung; else lowest full judge AUC"
+}

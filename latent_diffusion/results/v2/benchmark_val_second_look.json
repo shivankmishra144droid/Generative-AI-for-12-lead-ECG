@@ -1,0 +1,248 @@
+{
+  "created": "2026-11-14T11:52:51.623709+00:00",
+  "label": "second look (amendment 8); checkpoints selected on dev; validation used before in Phase F/G",
+  "sampler": {
+    "guidance": 2.0,
+    "steps": 50,
+    "eta": 0.0
+  },
+  "val_counts": [
+    256,
+    224,
+    125,
+    96
+  ],
+  "floor": {
+    "full_judge": 0.454046629630705,
+    "rhythm_judge": 0.49515780012627425,
+    "groups": {
+      "rhythm": 0.49515780012627425,
+      "morphology": 0.5216533764547145,
+      "noise_wander": 0.448446851957609,
+      "global": 0.48443215910028037
+    },
+    "hr_wasserstein": {
+      "SR": 2.3615856476326194,
+      "AFIB": 3.4069467857147884,
+      "STACH": 3.517221066424497,
+      "SBRAD": 1.5063775815988278
+    },
+    "mean_hr_wasserstein": 2.6980327703426834,
+    "coverage_task": {
+      "SR": 0.976,
+      "AFIB": 0.9393939393939394,
+      "STACH": 1.0,
+      "SBRAD": 0.8936170212765957
+    },
+    "mean_coverage_task": 0.9522527401676337,
+    "rhythm_failure": {
+      "SR": 0.0,
+      "AFIB": 0.04040404040404036,
+      "STACH": 0.018181818181818188,
+      "SBRAD": 0.0
+    },
+    "mean_rhythm_failure": 0.014646464646464637
+  },
+  "hybrid": {
+    "full_judge": 0.9653716278748625,
+    "rhythm_judge": 0.7347663118040824,
+    "groups": {
+      "rhythm": 0.7347663118040824,
+      "morphology": 0.8815061163145742,
+      "noise_wander": 0.9590393056064084,
+      "global": 0.7659414057756244
+    },
+    "hr_wasserstein": {
+      "SR": 10.179195709179696,
+      "AFIB": 10.007938429282325,
+      "STACH": 3.1966080121553784,
+      "SBRAD": 10.032502934145729
+    },
+    "mean_hr_wasserstein": 8.354061271190783,
+    "coverage_task": {
+      "SR": 0.66015625,
+      "AFIB": 0.8526785714285714,
+      "STACH": 0.84,
+      "SBRAD": 0.6458333333333334
+    },
+    "mean_coverage_task": 0.7496670386904762,
+    "rhythm_failure": {
+      "SR": 0.015625,
+      "AFIB": 0.040178571428571425,
+      "STACH": 0.0,
+      "SBRAD": 0.03125
+    },
+    "mean_rhythm_failure": 0.021763392857142856
+  },
+  "results": {
+    "cs120k": {
+      "full_judge": 0.9190902393774639,
+      "rhythm_judge": 0.7269964494353294,
+      "groups": {
+        "rhythm": 0.7269964494353294,
+        "morphology": 0.8175088943126804,
+        "noise_wander": 0.8447765757944519,
+        "global": 0.7228993376453785
+      },
+      "hr_wasserstein": {
+        "SR": 1.2281738982562787,
+        "AFIB": 5.1802070436099115,
+        "STACH": 3.112609911622526,
+        "SBRAD": 0.9002698850068601
+      },
+      "mean_hr_wasserstein": 2.605315184623894,
+      "coverage_task": {
+        "SR": 0.984375,
+        "AFIB": 0.9151785714285714,
+        "STACH": 0.968,
+        "SBRAD": 0.9791666666666666
+      },
+      "mean_coverage_task": 0.9616800595238094,
+      "rhythm_failure": {
+        "SR": 0.046875,
+        "AFIB": 0.08482142857142858,
+        "STACH": 0.016,
+        "SBRAD": 0.041666666666666664
+      },
+      "mean_rhythm_failure": 0.047340773809523805,
+      "adherence": null,
+      "step": 120000
+    },
+    "ds120k_bank": {
+      "full_judge": 0.9689053674581005,
+      "rhythm_judge": 0.591900054558106,
+      "groups": {
+        "rhythm": 0.591900054558106,
+        "morphology": 0.9536598935348224,
+        "noise_wander": 0.8961347647167367,
+        "global": 0.90672972028829
+      },
+      "hr_wasserstein": {
+        "SR": 1.5877201234462874,
+        "AFIB": 4.345992344317247,
+        "STACH": 3.9840875052223654,
+        "SBRAD": 0.48133360569821626
+      },
+      "mean_hr_wasserstein": 2.599783394671029,
+      "coverage_task": {
+        "SR": 0.859375,
+        "AFIB": 0.7857142857142857,
+        "STACH": 0.784,
+        "SBRAD": 0.8333333333333334
+      },
+      "mean_coverage_task": 0.8156056547619047,
+      "rhythm_failure": {
+        "SR": 0.0234375,
+        "AFIB": 0.05357142857142857,
+        "STACH": 0.0,
+        "SBRAD": 0.010416666666666666
+      },
+      "mean_rhythm_failure": 0.02185639880952381,
+      "adherence": {
+        "requested_beats": 9490,
+        "missed_fraction": 0.0321390937829294,
+        "extra_per_beat": 0.005584826132771338,
+        "ecg_any_error_fraction": 0.24964336661911554,
+        "tolerance_ms": 50
+      },
+      "step": 120000
+    },
+    "cm100k": {
+      "full_judge": 0.7959881896409746,
+      "rhythm_judge": 0.6263222243485316,
+      "groups": {
+        "rhythm": 0.6263222243485316,
+        "morphology": 0.7231372649776597,
+        "noise_wander": 0.7293767390027798,
+        "global": 0.6132413248585953
+      },
+      "hr_wasserstein": {
+        "SR": 1.3305368403469089,
+        "AFIB": 5.106236376983616,
+        "STACH": 1.9331671608977674,
+        "SBRAD": 0.7935391738596371
+      },
+      "mean_hr_wasserstein": 2.2908698880219824,
+      "coverage_task": {
+        "SR": 0.98046875,
+        "AFIB": 0.9241071428571429,
+        "STACH": 0.976,
+        "SBRAD": 0.9479166666666666
+      },
+      "mean_coverage_task": 0.9571231398809523,
+      "rhythm_failure": {
+        "SR": 0.03515625,
+        "AFIB": 0.05803571428571428,
+        "STACH": 0.0,
+        "SBRAD": 0.020833333333333332
+      },
+      "mean_rhythm_failure": 0.0285063244047619,
+      "adherence": null,
+      "step": 100000
+    }
+  },
+  "decisions": {
+    "cs120k": {
+      "verdict": "better",
+      "judge": [
+        0.9190902393774639,
+        0.007322501257009052
+      ],
+      "hybrid_judge": [
+        0.9653716278748625,
+        0.005157828482998277
+      ],
+      "coverage_not_worse_classes": 4,
+      "hr_not_worse_classes": 4
+    },
+    "ds120k_bank": {
+      "verdict": "not distinguishable",
+      "judge": [
+        0.9689053674581005,
+        0.0041926124845651285
+      ],
+      "hybrid_judge": [
+        0.9653716278748625,
+        0.005157828482998277
+      ],
+      "coverage_not_worse_classes": 4,
+      "hr_not_worse_classes": 4
+    },
+    "cm100k": {
+      "verdict": "better",
+      "judge": [
+        0.7959881896409746,
+        0.016176477074300682
+      ],
+      "hybrid_judge": [
+        0.9653716278748625,
+        0.005157828482998277
+      ],
+      "coverage_not_worse_classes": 4,
+      "hr_not_worse_classes": 4
+    }
+  },
+  "cm100k_sampling_seeds": {
+    "9630": {
+      "full": 0.8066324881985073,
+      "rhythm": 0.6182659890957302,
+      "morphology": 0.73354301973409,
+      "noise_wander": 0.7356824230734952,
+      "global": 0.6403504882684972
+    },
+    "9631": {
+      "full": 0.794976764886161,
+      "rhythm": 0.6346541085401028,
+      "morphology": 0.7307706912493662,
+      "noise_wander": 0.7293262318805582,
+      "global": 0.6411809872841332
+    },
+    "9632": {
+      "full": 0.8184599412045849,
+      "rhythm": 0.6318301605385569,
+      "morphology": 0.7453266218837378,
+      "noise_wander": 0.7505240954091164,
+      "global": 0.6040945133922749
+    }
+  }
+}

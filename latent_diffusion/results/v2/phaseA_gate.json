@@ -1,0 +1,534 @@
+{
+  "passed": false,
+  "judge_gate_mode": "full",
+  "checks": {
+    "floor/SR/emb_task/precision": {
+      "value": 0.953125,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SR/emb_task/coverage": {
+      "value": 0.953125,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SR/emb_ssl/precision": {
+      "value": 0.98828125,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SR/emb_ssl/coverage": {
+      "value": 0.96875,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/AFIB/emb_task/precision": {
+      "value": 0.9113924050632911,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/AFIB/emb_task/coverage": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/AFIB/emb_ssl/precision": {
+      "value": 0.9873417721518988,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/AFIB/emb_ssl/coverage": {
+      "value": 0.9493670886075949,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/STACH/emb_task/precision": {
+      "value": 0.9210526315789473,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/STACH/emb_task/coverage": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/STACH/emb_ssl/precision": {
+      "value": 0.9736842105263158,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/STACH/emb_ssl/coverage": {
+      "value": 0.9736842105263158,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SBRAD/emb_task/precision": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SBRAD/emb_task/coverage": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SBRAD/emb_ssl/precision": {
+      "value": 0.896551724137931,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/SBRAD/emb_ssl/coverage": {
+      "value": 1.0,
+      "rule": ">=0.85",
+      "passed": true
+    },
+    "floor/judge": {
+      "value": {
+        "value": 0.44311535140185015,
+        "sd": 0.015242071593883943,
+        "minimum": 0.4286195286195286,
+        "maximum": 0.46906035141329255,
+        "runs": [
+          0.43999999999999995,
+          0.4286195286195286,
+          0.43805980432685687,
+          0.43983707264957267,
+          0.46906035141329255
+        ],
+        "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+        "top8_permutation_importance": [
+          {
+            "feature": "max_abs",
+            "auc_drop": 0.015476323028726036
+          },
+          {
+            "feature": "hr",
+            "auc_drop": 0.005338306128814907
+          },
+          {
+            "feature": "r_amp_rel_sd",
+            "auc_drop": 0.0043833956978517035
+          },
+          {
+            "feature": "res_kurtosis",
+            "auc_drop": 0.0043393481042081775
+          },
+          {
+            "feature": "total_rms",
+            "auc_drop": 0.002527751524881509
+          },
+          {
+            "feature": "n_beats",
+            "auc_drop": 0.0016856301032406062
+          },
+          {
+            "feature": "wander_edge_inc_ratio",
+            "auc_drop": 0.0010946307297869978
+          },
+          {
+            "feature": "s_depth_II",
+            "auc_drop": 0.00044156597651478336
+          }
+        ]
+      },
+      "rule": "AUC 0.40\u20130.60 and SD <=0.06; fallback all four groups",
+      "passed": true,
+      "fallback_used": false,
+      "group_values": {
+        "rhythm": {
+          "value": 0.4508889093205168,
+          "sd": 0.03515168209417012,
+          "minimum": 0.413030303030303,
+          "maximum": 0.5022035256410255,
+          "runs": [
+            0.43673684210526315,
+            0.413030303030303,
+            0.432857930274218,
+            0.5022035256410255,
+            0.4696159455517745
+          ],
+          "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+          "top8_permutation_importance": [
+            {
+              "feature": "n_beats",
+              "auc_drop": 0.0005856694824612665
+            },
+            {
+              "feature": "class_STACH",
+              "auc_drop": -0.0004292829540176882
+            },
+            {
+              "feature": "class_SR",
+              "auc_drop": -0.001783381733470864
+            },
+            {
+              "feature": "class_SBRAD",
+              "auc_drop": -0.0026908869652583728
+            },
+            {
+              "feature": "class_AFIB",
+              "auc_drop": -0.0029562900836238503
+            },
+            {
+              "feature": "hr",
+              "auc_drop": -0.003397240322469116
+            },
+            {
+              "feature": "rmssd_ms",
+              "auc_drop": -0.01515172552625905
+            },
+            {
+              "feature": "sdnn_ms",
+              "auc_drop": -0.0229640647775832
+            }
+          ]
+        },
+        "morphology": {
+          "value": 0.4842921991757153,
+          "sd": 0.03947593147741758,
+          "minimum": 0.44130608974358976,
+          "maximum": 0.5471958109411602,
+          "runs": [
+            0.4680701754385964,
+            0.4735353535353536,
+            0.5471958109411602,
+            0.44130608974358976,
+            0.4913535662198764
+          ],
+          "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+          "top8_permutation_importance": [
+            {
+              "feature": "r_amp_rel_sd",
+              "auc_drop": 0.01761972606856335
+            },
+            {
+              "feature": "t_amp_II",
+              "auc_drop": 0.01120422264649405
+            },
+            {
+              "feature": "beat_corr_median",
+              "auc_drop": 0.009903321349538283
+            },
+            {
+              "feature": "r_amp_II",
+              "auc_drop": 0.005835369805542492
+            },
+            {
+              "feature": "class_SBRAD",
+              "auc_drop": -0.000333867521367522
+            },
+            {
+              "feature": "class_AFIB",
+              "auc_drop": -0.00033516673851007685
+            },
+            {
+              "feature": "class_STACH",
+              "auc_drop": -0.0004903522403522246
+            },
+            {
+              "feature": "class_SR",
+              "auc_drop": -0.0018448027731193175
+            }
+          ]
+        },
+        "noise_wander": {
+          "value": 0.4635492567492056,
+          "sd": 0.005755229717628667,
+          "minimum": 0.45713141025641035,
+          "maximum": 0.47277192982456134,
+          "runs": [
+            0.47277192982456134,
+            0.463973063973064,
+            0.4625878462174452,
+            0.45713141025641035,
+            0.4612820334745469
+          ],
+          "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+          "top8_permutation_importance": [
+            {
+              "feature": "res_rms",
+              "auc_drop": 0.00666200931212904
+            },
+            {
+              "feature": "res_kurtosis",
+              "auc_drop": 0.005512250063345922
+            },
+            {
+              "feature": "class_SR",
+              "auc_drop": 0.004220777929773053
+            },
+            {
+              "feature": "class_STACH",
+              "auc_drop": 0.0026536505403107072
+            },
+            {
+              "feature": "class_SBRAD",
+              "auc_drop": 0.00022661176796126377
+            },
+            {
+              "feature": "class_AFIB",
+              "auc_drop": -6.9536992700588215e-06
+            },
+            {
+              "feature": "res_hf_share",
+              "auc_drop": -0.000517287882456881
+            },
+            {
+              "feature": "res_qrs_ratio",
+              "auc_drop": -0.007193443579117445
+            }
+          ]
+        },
+        "global": {
+          "value": 0.491547709158196,
+          "sd": 0.040023974892043096,
+          "minimum": 0.42248863166597767,
+          "maximum": 0.523838141025641,
+          "runs": [
+            0.5136140350877193,
+            0.4982491582491582,
+            0.42248863166597767,
+            0.523838141025641,
+            0.49954857976248357
+          ],
+          "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+          "top8_permutation_importance": [
+            {
+              "feature": "max_abs",
+              "auc_drop": 0.020167154656281838
+            },
+            {
+              "feature": "spectral_entropy_II",
+              "auc_drop": 0.005277886012516823
+            },
+            {
+              "feature": "class_SR",
+              "auc_drop": 0.0010470159469383197
+            },
+            {
+              "feature": "class_SBRAD",
+              "auc_drop": -0.0004404681312182671
+            },
+            {
+              "feature": "class_STACH",
+              "auc_drop": -0.0006907696803746255
+            },
+            {
+              "feature": "class_AFIB",
+              "auc_drop": -0.0020165067981143554
+            },
+            {
+              "feature": "cross_lead_corr",
+              "auc_drop": -0.016130855739934537
+            },
+            {
+              "feature": "total_rms",
+              "auc_drop": -0.016329807719885216
+            }
+          ]
+        }
+      }
+    },
+    "noise/judge": {
+      "value": 1.0,
+      "rule": ">0.95",
+      "passed": true
+    },
+    "copy/SR/distance": {
+      "value": 8.698809868544479e-08,
+      "rule": "<1e-5 (approximately zero)",
+      "passed": true
+    },
+    "copy/SR/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "noise/SR/emb_task/precision": {
+      "value": 0.984375,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "collapse/SR/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/SR/emb_task/coverage": {
+      "value": 0.01953125,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "noise/SR/emb_ssl/precision": {
+      "value": 1.0,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "collapse/SR/emb_ssl/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/SR/emb_ssl/coverage": {
+      "value": 0.01953125,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "copy/AFIB/distance": {
+      "value": 7.92940865655924e-08,
+      "rule": "<1e-5 (approximately zero)",
+      "passed": true
+    },
+    "copy/AFIB/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "noise/AFIB/emb_task/precision": {
+      "value": 1.0,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "collapse/AFIB/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/AFIB/emb_task/coverage": {
+      "value": 0.03529411764705882,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "noise/AFIB/emb_ssl/precision": {
+      "value": 0.9411764705882353,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "collapse/AFIB/emb_ssl/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/AFIB/emb_ssl/coverage": {
+      "value": 0.047058823529411764,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "copy/STACH/distance": {
+      "value": 9.589958328149764e-08,
+      "rule": "<1e-5 (approximately zero)",
+      "passed": true
+    },
+    "copy/STACH/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "noise/STACH/emb_task/precision": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/STACH/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/STACH/emb_task/coverage": {
+      "value": 0.06097560975609756,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "noise/STACH/emb_ssl/precision": {
+      "value": 1.0,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "collapse/STACH/emb_ssl/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/STACH/emb_ssl/coverage": {
+      "value": 0.0975609756097561,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "copy/SBRAD/distance": {
+      "value": 8.036761249112953e-08,
+      "rule": "<1e-5 (approximately zero)",
+      "passed": true
+    },
+    "copy/SBRAD/membership": {
+      "value": 1.0,
+      "rule": ">0.9",
+      "passed": true
+    },
+    "noise/SBRAD/emb_task/precision": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/SBRAD/emb_task/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/SBRAD/emb_task/coverage": {
+      "value": 0.12698412698412698,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "noise/SBRAD/emb_ssl/precision": {
+      "value": 0.6984126984126984,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "collapse/SBRAD/emb_ssl/recall": {
+      "value": 0.0,
+      "rule": "<0.1",
+      "passed": true
+    },
+    "collapse/SBRAD/emb_ssl/coverage": {
+      "value": 0.1111111111111111,
+      "rule": "<0.1",
+      "passed": false
+    },
+    "bootstrap/sanity": {
+      "passed": true,
+      "point_inclusion": true,
+      "width_shrinks": true,
+      "results": {
+        "512": {
+          "value": 0.053882874545587586,
+          "ci95": [
+            -0.038185272547747985,
+            0.14353088178498719
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "1024": {
+          "value": 0.020226963315338006,
+          "ci95": [
+            -0.04169661986105462,
+            0.08523163214727777
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        }
+      }
+    }
+  },
+  "failures": [
+    "noise/SR/emb_task/precision",
+    "noise/SR/emb_ssl/precision",
+    "noise/AFIB/emb_task/precision",
+    "noise/AFIB/emb_ssl/precision",
+    "noise/STACH/emb_ssl/precision",
+    "collapse/SBRAD/emb_task/coverage",
+    "noise/SBRAD/emb_ssl/precision",
+    "collapse/SBRAD/emb_ssl/coverage"
+  ],
+  "instruction": "Do not continue to B until A passes. Gate thresholds unchanged."
+}

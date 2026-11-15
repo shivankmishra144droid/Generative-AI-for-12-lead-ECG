@@ -1,0 +1,128 @@
+{
+  "runs": {
+    "9200": {
+      "auc": 1.0,
+      "n_per_class": [
+        256,
+        170,
+        82,
+        63
+      ],
+      "n_test": 343,
+      "per_class": {
+        "SR": 1.0,
+        "AFIB": 1.0,
+        "STACH": 1.0,
+        "SBRAD": 1.0
+      }
+    },
+    "9201": {
+      "auc": 1.0,
+      "n_per_class": [
+        256,
+        170,
+        82,
+        63
+      ],
+      "n_test": 343,
+      "per_class": {
+        "SR": 1.0,
+        "AFIB": 1.0,
+        "STACH": 1.0,
+        "SBRAD": 1.0
+      }
+    },
+    "9202": {
+      "auc": 1.0,
+      "n_per_class": [
+        256,
+        170,
+        82,
+        63
+      ],
+      "n_test": 343,
+      "per_class": {
+        "SR": 1.0,
+        "AFIB": 1.0,
+        "STACH": 1.0,
+        "SBRAD": 1.0
+      }
+    },
+    "9203": {
+      "auc": 1.0,
+      "n_per_class": [
+        256,
+        170,
+        82,
+        63
+      ],
+      "n_test": 343,
+      "per_class": {
+        "SR": 1.0,
+        "AFIB": 1.0,
+        "STACH": 1.0,
+        "SBRAD": 1.0
+      }
+    },
+    "9204": {
+      "auc": 1.0,
+      "n_per_class": [
+        256,
+        170,
+        82,
+        63
+      ],
+      "n_test": 343,
+      "per_class": {
+        "SR": 1.0,
+        "AFIB": 1.0,
+        "STACH": 1.0,
+        "SBRAD": 1.0
+      }
+    }
+  },
+  "auc": {
+    "mean": 1.0,
+    "sd": 0.0,
+    "ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  "per_class": {
+    "SR": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "AFIB": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "STACH": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "SBRAD": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "status": "complete",
+  "uncertainty": "Exploratory Student-t interval over 5 training seeds, not patient-bootstrap CI; not used as a gate"
+}

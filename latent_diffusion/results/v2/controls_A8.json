@@ -1,0 +1,1097 @@
+{
+  "noise_judges": {
+    "full": {
+      "value": 1.0,
+      "sd": 0.0,
+      "minimum": 1.0,
+      "maximum": 1.0,
+      "runs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+      "top8_permutation_importance": [
+        {
+          "feature": "beat_corr_median",
+          "auc_drop": 0.2871013860216972
+        },
+        {
+          "feature": "spectral_entropy_II",
+          "auc_drop": 0.09757792134194719
+        },
+        {
+          "feature": "wander_edge_inc_ratio",
+          "auc_drop": 1.4802973661668754e-17
+        },
+        {
+          "feature": "sdnn_ms",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "r_amp_rel_sd",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "res_edge_ratio",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "tpl_p2p",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "rr_cv",
+          "auc_drop": 7.401486830834377e-18
+        }
+      ]
+    },
+    "rhythm": {
+      "value": 0.990479914500938,
+      "sd": 0.0031741853909585563,
+      "minimum": 0.9873309364834788,
+      "maximum": 0.9954961197339246,
+      "runs": [
+        0.9889440872783948,
+        0.9914994899693982,
+        0.9873309364834788,
+        0.9891289390394936,
+        0.9954961197339246
+      ],
+      "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+      "top8_permutation_importance": [
+        {
+          "feature": "rr_cv",
+          "auc_drop": 0.19121882046014707
+        },
+        {
+          "feature": "hr",
+          "auc_drop": 0.02074354941271424
+        },
+        {
+          "feature": "rmssd_ms",
+          "auc_drop": 0.004368606744753937
+        },
+        {
+          "feature": "n_beats",
+          "auc_drop": 0.002675574204790417
+        },
+        {
+          "feature": "class_SR",
+          "auc_drop": 0.0013495271194954674
+        },
+        {
+          "feature": "class_AFIB",
+          "auc_drop": 0.0007669095137508317
+        },
+        {
+          "feature": "class_SBRAD",
+          "auc_drop": 7.415789725776871e-05
+        },
+        {
+          "feature": "sdnn_ms",
+          "auc_drop": -3.2933489751041464e-05
+        }
+      ]
+    },
+    "morphology": {
+      "value": 1.0,
+      "sd": 0.0,
+      "minimum": 1.0,
+      "maximum": 1.0,
+      "runs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+      "top8_permutation_importance": [
+        {
+          "feature": "beat_corr_median",
+          "auc_drop": 0.43007305554657504
+        },
+        {
+          "feature": "r_amp_II",
+          "auc_drop": 1.4802973661668754e-17
+        },
+        {
+          "feature": "st_level_II",
+          "auc_drop": 1.4802973661668754e-17
+        },
+        {
+          "feature": "qrs_width_ms",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "tpl_p2p",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "t_amp_II",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "s_depth_II",
+          "auc_drop": 0.0
+        },
+        {
+          "feature": "r_amp_rel_sd",
+          "auc_drop": 0.0
+        }
+      ]
+    },
+    "noise_wander": {
+      "value": 1.0,
+      "sd": 5.551115123125783e-17,
+      "minimum": 0.9999999999999999,
+      "maximum": 1.0,
+      "runs": [
+        0.9999999999999999,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+      "top8_permutation_importance": [
+        {
+          "feature": "res_kurtosis",
+          "auc_drop": 0.09740096443710292
+        },
+        {
+          "feature": "res_hf_share",
+          "auc_drop": 0.0021523401798359135
+        },
+        {
+          "feature": "res_qrs_ratio",
+          "auc_drop": 1.5925479384582e-05
+        },
+        {
+          "feature": "wander_edge_inc_ratio",
+          "auc_drop": 6.800408024454363e-06
+        },
+        {
+          "feature": "res_rms",
+          "auc_drop": 4.533605349636243e-06
+        },
+        {
+          "feature": "wander_rms",
+          "auc_drop": 1.4802973661668754e-17
+        },
+        {
+          "feature": "class_SBRAD",
+          "auc_drop": 7.401486830834377e-18
+        },
+        {
+          "feature": "class_SR",
+          "auc_drop": 0.0
+        }
+      ]
+    },
+    "global": {
+      "value": 0.9994316041773669,
+      "sd": 0.0012614229116368345,
+      "minimum": 0.9971751412429379,
+      "maximum": 1.0,
+      "runs": [
+        0.9971751412429379,
+        1.0,
+        0.9999828796438965,
+        0.9999999999999999,
+        1.0
+      ],
+      "uncertainty": "Five grouped 70/30 splits; SD and range, not a 95% CI",
+      "top8_permutation_importance": [
+        {
+          "feature": "spectral_entropy_II",
+          "auc_drop": 0.35351567817559576
+        },
+        {
+          "feature": "cross_lead_corr",
+          "auc_drop": 0.00023014087888426627
+        },
+        {
+          "feature": "max_abs",
+          "auc_drop": 2.28271414709121e-06
+        },
+        {
+          "feature": "class_SBRAD",
+          "auc_drop": 0.0
+        },
+        {
+          "feature": "class_STACH",
+          "auc_drop": 0.0
+        },
+        {
+          "feature": "total_rms",
+          "auc_drop": -2.2204460492503132e-17
+        },
+        {
+          "feature": "class_AFIB",
+          "auc_drop": -2.2204460492503132e-17
+        },
+        {
+          "feature": "class_SR",
+          "auc_drop": -2.2204460492503132e-17
+        }
+      ]
+    }
+  },
+  "by_class": {
+    "SR": {
+      "emb_task": {
+        "noise": {
+          "precision": {
+            "value": 0.984375,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 0.38046875,
+            "ci95": [
+              0.0,
+              0.61064453125
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.0078125,
+            "ci95": [
+              0.0,
+              0.019455252918287938
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.0,
+            "ci95": [
+              0.2,
+              1.6
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.01953125,
+            "ci95": [
+              0.003875968992248062,
+              0.0311284046692607
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "emb_ssl": {
+        "noise": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              0.6172851562500001,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 0.7234375,
+            "ci95": [
+              0.1944140625,
+              1.2828710937499996
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.03515625,
+            "ci95": [
+              0.015625,
+              0.05501543924656476
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.0,
+            "ci95": [
+              0.0,
+              1.6
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.01953125,
+            "ci95": [
+              0.0,
+              0.031007751937984496
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "exact_copy": {
+        "ratio_of_medians": {
+          "value": 8.698809868544479e-08,
+          "ci95": [
+            8.011682355608714e-08,
+            9.269045700487214e-08
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "exact_copy_fraction": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "synthetic_to_train_median": {
+          "value": 8.073441250610539e-08,
+          "ci95": [
+            7.563165391045178e-08,
+            8.529922399520072e-08
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "real_to_train_median": {
+          "value": 0.9281087151708743,
+          "ci95": [
+            0.9070042271521231,
+            0.9524911698143176
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "membership_auc": {
+          "value": 1.0,
+          "ci95": [
+            0.9999999999999999,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "note": "Limited negative-nearest-release-distance attack; no privacy guarantee; fixed fit reference"
+      }
+    },
+    "AFIB": {
+      "emb_task": {
+        "noise": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              0.9733823529411765,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.0776470588235294,
+            "ci95": [
+              0.21338235294117647,
+              1.7252941176470582
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.052941176470588235,
+            "ci95": [
+              0.01834175084175084,
+              0.09064895947426067
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.2,
+            "ci95": [
+              0.2,
+              2.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.03529411764705882,
+            "ci95": [
+              0.005813953488372093,
+              0.06287715517241378
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "emb_ssl": {
+        "noise": {
+          "precision": {
+            "value": 0.9411764705882353,
+            "ci95": [
+              0.1848529411764706,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 0.49058823529411766,
+            "ci95": [
+              0.05938235294117647,
+              0.8000588235294117
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.052941176470588235,
+            "ci95": [
+              0.017696658545074836,
+              0.07670814479638008
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.6,
+            "ci95": [
+              0.2,
+              2.2
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.047058823529411764,
+            "ci95": [
+              0.005897556390977443,
+              0.0672892039503217
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "exact_copy": {
+        "ratio_of_medians": {
+          "value": 7.92940865655924e-08,
+          "ci95": [
+            7.2354604706369e-08,
+            8.979355805330446e-08
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "exact_copy_fraction": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "synthetic_to_train_median": {
+          "value": 8.120110091484522e-08,
+          "ci95": [
+            7.512264204936829e-08,
+            9.071667702128362e-08
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "real_to_train_median": {
+          "value": 1.024049893653486,
+          "ci95": [
+            0.9536793334096583,
+            1.0784036447031613
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "membership_auc": {
+          "value": 1.0,
+          "ci95": [
+            0.9999999999999999,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "note": "Limited negative-nearest-release-distance attack; no privacy guarantee; fixed fit reference"
+      }
+    },
+    "STACH": {
+      "emb_task": {
+        "noise": {
+          "precision": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.0,
+            "ci95": [
+              0.2,
+              1.6
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.06097560975609756,
+            "ci95": [
+              0.012048192771084338,
+              0.1006645569620253
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "emb_ssl": {
+        "noise": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 2.6195121951219513,
+            "ci95": [
+              1.2173780487804877,
+              3.1515853658536583
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.2926829268292683,
+            "ci95": [
+              0.1471996386630533,
+              0.3291139240506329
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.6,
+            "ci95": [
+              0.4,
+              2.2
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.0975609756097561,
+            "ci95": [
+              0.024235968263297093,
+              0.1376074386622909
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "exact_copy": {
+        "ratio_of_medians": {
+          "value": 9.589958328149764e-08,
+          "ci95": [
+            8.720298459355957e-08,
+            1.1209609155270319e-07
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "exact_copy_fraction": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "synthetic_to_train_median": {
+          "value": 1.1080483116289443e-07,
+          "ci95": [
+            1.0446978712180445e-07,
+            1.2555705806815782e-07
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "real_to_train_median": {
+          "value": 1.15542557507935,
+          "ci95": [
+            1.0468235649783983,
+            1.2217306382107989
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "membership_auc": {
+          "value": 1.0,
+          "ci95": [
+            0.9999999999999999,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "note": "Limited negative-nearest-release-distance attack; no privacy guarantee; fixed fit reference"
+      }
+    },
+    "SBRAD": {
+      "emb_task": {
+        "noise": {
+          "precision": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.6,
+            "ci95": [
+              0.6,
+              2.2
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.12698412698412698,
+            "ci95": [
+              0.04798387096774193,
+              0.1774193548387097
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "emb_ssl": {
+        "noise": {
+          "precision": {
+            "value": 0.6984126984126984,
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 0.15873015873015872,
+            "ci95": [
+              0.0,
+              0.39531746031746023
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.047619047619047616,
+            "ci95": [
+              0.0,
+              0.078125
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        },
+        "collapse": {
+          "precision": {
+            "value": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "recall": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "density": {
+            "value": 1.4,
+            "ci95": [
+              0.4,
+              2.4
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          },
+          "coverage": {
+            "value": 0.1111111111111111,
+            "ci95": [
+              0.03225806451612903,
+              0.19047619047619047
+            ],
+            "valid_replicates": 500,
+            "replicates": 500
+          }
+        }
+      },
+      "exact_copy": {
+        "ratio_of_medians": {
+          "value": 8.036761249112953e-08,
+          "ci95": [
+            7.138393286619084e-08,
+            8.904077464918631e-08
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "exact_copy_fraction": {
+          "value": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "synthetic_to_train_median": {
+          "value": 6.964652474786963e-08,
+          "ci95": [
+            6.514835844650014e-08,
+            7.639322179602251e-08
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "real_to_train_median": {
+          "value": 0.8665993997962397,
+          "ci95": [
+            0.8083124202616372,
+            0.9322009626863813
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "membership_auc": {
+          "value": 1.0,
+          "ci95": [
+            0.9999999999999999,
+            1.0
+          ],
+          "valid_replicates": 500,
+          "replicates": 500
+        },
+        "note": "Limited negative-nearest-release-distance attack; no privacy guarantee; fixed fit reference"
+      }
+    }
+  },
+  "bootstrap_sanity": {
+    "passed": true,
+    "point_inclusion": true,
+    "width_shrinks": true,
+    "results": {
+      "512": {
+        "value": 0.053882874545587586,
+        "ci95": [
+          -0.038185272547747985,
+          0.14353088178498719
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      },
+      "1024": {
+        "value": 0.020226963315338006,
+        "ci95": [
+          -0.04169661986105462,
+          0.08523163214727777
+        ],
+        "valid_replicates": 500,
+        "replicates": 500
+      }
+    }
+  },
+  "collapse_definition": "One fixed fit ECG per class repeated, no within-class variation",
+  "noise_definition": "Independent zero-mean Gaussian, class/lead SD from fixed fit reference"
+}

@@ -1,0 +1,19 @@
+{
+  "full_counts": [
+    256,
+    170,
+    82,
+    63
+  ],
+  "floor_counts": [
+    256,
+    79,
+    38,
+    29
+  ],
+  "afib_cv": 0.19493265385510727,
+  "scaler": "Fixed fit-only matched reference, 571 ECGs; identical for every candidate",
+  "task_encoder_sha256": "51466880ac3c50a9d6957f1d90be58db72fb2f06a40bb94704ba0751fbfd327e",
+  "ssl_encoder_sha256": "6c008a2db33590718c2f39ee24486b537457a360324750c2af5c23fb6f0b1060",
+  "cohorts_sha256": "6ee4927b6aa5b15f372a12430d1e8414354087e26a08769a08470665686c56f3"
+}

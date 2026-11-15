@@ -1,0 +1,21 @@
+{
+  "r1": {
+    "train": {
+      "best_dev_mse": 0.01830911565078761,
+      "seconds": 223.95781339999667,
+      "peak_reserved_mib": 92.0
+    },
+    "gate": {
+      "full": 0.624590685067175,
+      "groups": {
+        "rhythm": 0.5174165488547927,
+        "morphology": 0.5241336075173422,
+        "noise_wander": 0.6214137309484686,
+        "global": 0.5259162320539161
+      },
+      "missed": 0.008981233243967829,
+      "passed": true
+    },
+    "sha256": "0cf75ef3f02ee01fa0b665207e1a46af6ccfef7db4e202d13accb52ef3b55693"
+  }
+}
